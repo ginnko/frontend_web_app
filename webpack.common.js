@@ -15,10 +15,6 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.less$/,
-        use: ['style-loader', 'css-loader', 'less-loader'],
-      },
-      {
         test: /\.(png|svg|jpg|gif)$/,
         use: ['file-loader'],
       },
@@ -29,7 +25,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js', '.jsx'],
+    extensions: ['.tsx', '.ts', '.js', '.jsx', '.less'],
   },
   output: {
     filename: '[name].bundle.js',

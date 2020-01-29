@@ -18,6 +18,7 @@
 		"module": "commonjs",
 	},
 	"include": [
-		"src"
+		"src",
+		"./external.d.ts",
 	]
 }
